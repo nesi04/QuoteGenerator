@@ -1,0 +1,131 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.721);
+  width: 80vh;
+  height: 30vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .allq {
+    overflow: scroll;
+    height: 150px;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        display: inline;
+        font-size: 13px;
+        justify-content: flex-start;
+      }
+      span {
+        font-size: 15px;
+        align-content: start;
+      }
+      .delete {
+        padding-left: 50px;
+        font-size: 20px;
+      }
+    }
+    hr {
+      border: none;
+      border-top: 1px solid blueviolet; 
+      width: 100%; 
+    }
+  }
+}
+
+button {
+  width: 100px;
+  aspect-ratio: 7/2;
+  border: none;
+  background-color: rgb(253, 253, 162);
+  color: rgb(10, 10, 113);
+  font-weight: bolder;
+  border: 1px solid rgb(10, 10, 113);
+  border-right: 3px solid rgb(10, 10, 113);
+  border-bottom: 3px solid rgb(10, 10, 113);
+
+  &:hover {
+    border: 2px solid rgb(10, 10, 113);
+    border-right: 4px solid rgb(10, 10, 113);
+    border-bottom: 4px solid rgb(10, 10, 113);
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  padding-right: 30px;
+
+  h2 {
+    color: rgb(16, 34, 34);
+  }
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+  }
+  span {
+    font-weight: bold;
+    color: rgb(15, 5, 24);
+  }
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+  padding-top: 0;
+
+  button {
+    width: 100px;
+    aspect-ratio: 7/2;
+    border: none;
+    background-color: rgb(253, 253, 162);
+    color: rgb(10, 10, 113);
+    font-weight: bolder;
+    border: 1px solid rgb(10, 10, 113);
+    border-right: 3px solid rgb(10, 10, 113);
+    border-bottom: 3px solid rgb(10, 10, 113);
+
+    &:hover {
+      border: 2px solid rgb(10, 10, 113);
+      border-right: 4px solid rgb(10, 10, 113);
+      border-bottom: 4px solid rgb(10, 10, 113);
+    }
+  }
+}
